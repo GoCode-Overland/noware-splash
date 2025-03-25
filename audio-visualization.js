@@ -19,7 +19,7 @@ function initAudioSpectrum() {
     muteBtn.querySelector('[data-mute]').classList.toggle('hidden');
   }
   // Hook up mute button
-  video.parentNode.addEventListener('click', handleMute);
+  video.addEventListener('click', handleMute);
   
   // Load the pre-recorded frequency data
   async function loadFrequencyData(url) {
